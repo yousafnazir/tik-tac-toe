@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+
+nav ul {
+  list-style: none;
+}
+nav {
+  background-color: black;
+  color: #fff;
+  height: 75px;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-family: 'Quicksand', sans-ser;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.Game-c {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   gap: 29vw;
+}
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 7vw);
+   grid-template-rows: repeat(3, 7vw);
+   font-family: 'Quicksand', sans-ser;
+   position: relative;
+}
+.box {
+  border: 1px solid black;
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-info {
+  padding: 0 35px;
+}
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+.img img {
+  height: 74px;
+  width: 0%;
+  transition: width 1s ease-in-out;
+  margin-top: 4vw;
+}
+.line {
+  background-color: black;
+  height: 3px;
+  width: 0vw;
+  position: absolute;
+  transition: width 1s ease-in;
+}
+#reset {
+  position: relative;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    margin-top: 5vw;
+}
+#reset:hover {
+  color: #255784;
+  background-color: #2169f3;
+  box-shadow: 0 0 10px #2169f3, 0 0 40px #2169f3, 0 0 80px #2169f3;
+  transition-delay: 0.5s ease;
+}
+h3 {
+  margin-bottom: 2vw;
+}
+.info {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 950px)
+{
+    .Game-c {
+      flex-wrap: wrap;
+    }
+    .game-info {
+      margin-top: 35px;
+    }
+}
